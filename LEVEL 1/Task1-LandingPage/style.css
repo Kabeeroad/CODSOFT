@@ -2,82 +2,116 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "gilro";
 }
 html,
 body {
-  height: 100%;
   width: 100%;
-  background-color: rgb(65, 64, 64);
-  /* color: white;/ */
+  height: 100%;
+  background-color: #01040b;
 }
-.navbar {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 0;
+.main {
+  width: 100%;
+  height: 100vh;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  color: #fff;
+nav {
+  background-color: blue;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  /* background-color: rgb(84, 84, 241); */
 }
-.img-contianer {
+
+.logo-container {
+  color: white;
   display: flex;
   align-items: center;
 }
-.container img {
+.logo-container img {
   height: 80px;
-  width: 80px;
+  width: 100px;
   mix-blend-mode: color-dodge;
 }
-
-.nav-links {
-  list-style: none;
-  display: flex;
+.logo-container h3 {
+  font-size: 35px;
+  font-weight: bold;
 }
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links li a {
-  color: #fff;
+.nav-links a {
   text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-.container button {
-  background-color: rgb(118, 118, 233);
-
-  height: 40px;
-  width: 90px;
-  border-radius: 40px;
-  border: none;
-  gap: 10px;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
   transition: 0.3s ease-in-out;
 }
-.container button:hover {
-  cursor: pointer;
-  background-color: #ffcc00;
-  color: #fff;
+
+.nav-links a:hover {
+  color: orange;
+}
+.nav-links button {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.nav-links button:hover {
+  background-color: blue;
+  color: white;
 }
 
-.nav-links li a:hover {
-  color: #ffcc00; /* Change color on hover */
-  cursor: pointer;
+/* ----------------------------------------------- */
+
+.hero {
+  background-color: yellow;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
-/* <--------------------------------------------------> */
-.main .hero {
+.hero img {
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+
+  /* mix-blend-mode: hard-light; */
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 99;
   text-align: center;
 }
+.text-overlay h1 {
+  font-size: 97px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  top: -50px;
+  position: relative;
+}
+.btn {
+  width: 110px;
+  height: 35px;
+  border-radius: 30px;
+  border: none;
+  background-color: aqua;
+}
 
-.hero img {
-  mix-blend-mode: hard-light;
-  height: 90vh;
-  width: 100vh;
+.btn i {
+  padding: 5px;
+
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 10px;
 }
